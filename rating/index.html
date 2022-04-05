@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <title>Rating component</title>
+</head>
+
+<body class="center-contents">
+  <main>
+    <h1 class="visually-hidden">Rating component</h1>
+    <article class="rating">
+      <h2 class="rating__heading">How did we do?</h2>
+      <div class="rating__star-decoration"><i class="bi bi-star-fill"></i></div>
+      <div class="rating__content">
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+          offering!</p>
+        <form action="#" method="post" class="rating__rating-form rating-form">
+          <fieldset class="rating-form__stars-fieldset">
+            <legend class="visually-hidden">Choose rating</legend>
+
+            <div class="rating-form__stars-wrapper">
+              <div class="ratin-form__star-wrapper">
+                <input class="rating-form__star-input" required type="radio" name="rating" id="rating-radio-1">
+                <label class="rating-form__star-label" for="rating-radio-1">1</label>
+              </div>
+
+              <div class="ratin-form__star-wrapper">
+                <input class="rating-form__star-input" type="radio" name="rating" id="rating-radio-2">
+                <label class="rating-form__star-label" for="rating-radio-2">2</label>
+              </div>
+
+              <div class="ratin-form__star-wrapper">
+                <input class="rating-form__star-input" type="radio" name="rating" id="rating-radio-3">
+                <label class="rating-form__star-label" for="rating-radio-3">3</label>
+              </div>
+
+              <div class="ratin-form__star-wrapper">
+                <input class="rating-form__star-input" type="radio" name="rating" id="rating-radio-4">
+                <label class="rating-form__star-label" for="rating-radio-4">4</label>
+              </div>
+
+              <div class="ratin-form__star-wrapper">
+                <input class="rating-form__star-input" type="radio" name="rating" id="rating-radio-5">
+                <label class="rating-form__star-label" for="rating-radio-5">5</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <button class="rating-form__submit-button" type="submit">Submit</button>
+        </form>
+      </div>
+    </article>
+  </main>
+  <script src="./main.ts" type="module"></script>
+</body>
+
+</html>
