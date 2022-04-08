@@ -1,5 +1,7 @@
 @import './rating.css';
 @import './rating-form.css';
+@import './header.css';
+@import './rating-feedback.css';
 
 *,
 *::after,
@@ -25,10 +27,23 @@
 
 html,
 body {
-  min-height: calc(100vh - 2rem);
-  padding: 1rem;
+  min-height: 100vh;
 }
 
 body {
+  display: grid;
+  grid-template-rows: auto 1fr;
   background-color: var(--clr-neutral-900);
+}
+
+.body__page-header {
+  place-self: stretch;
+}
+
+.body__page-main {
+  place-self: center;
+}
+
+.page-main {
+  padding: 1rem;
 }

@@ -8,6 +8,10 @@
   background: linear-gradient(to top, var(--clr-neutral-700), var(--clr-neutral-650));
 }
 
+.rating_hidden {
+  display: none;
+}
+
 .rating__star-decoration {
   order: -1;
   align-self: center;
