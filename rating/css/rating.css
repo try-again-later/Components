@@ -5,7 +5,11 @@
   padding: 2rem;
   border-radius: 1rem;
   color: var(--clr-neutral-300);
-  background: linear-gradient(to top, var(--clr-neutral-700), var(--clr-neutral-650));
+  background: linear-gradient(
+    to top,
+    var(--clr-neutral-700),
+    var(--clr-neutral-650)
+  );
 }
 
 .rating_hidden {

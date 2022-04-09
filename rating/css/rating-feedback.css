@@ -9,7 +9,11 @@
   color: var(--clr-neutral-300);
   font-family: 'Lato', sans-serif;
   text-align: center;
-  background: linear-gradient(to top, var(--clr-neutral-700), var(--clr-neutral-650));
+  background: linear-gradient(
+    to top,
+    var(--clr-neutral-700),
+    var(--clr-neutral-650)
+  );
 }
 
 .rating-feedback_hidden {

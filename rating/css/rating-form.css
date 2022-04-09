@@ -32,12 +32,17 @@
 
 .rating-form__star-label:hover {
   background-color: var(--clr-neutral-400);
-  color: var(--clr-neutral-100)
+  color: var(--clr-neutral-100);
 }
 
-.rating-form__star-input:checked+.rating-form__star-label {
+.rating-form__star-input:checked + .rating-form__star-label {
   color: var(--clr-neutral-100);
   background-color: var(--clr-primary-400);
+}
+
+.rating-form__star-input:focus + .rating-form__star-label {
+  outline: 2px solid var(--clr-neutral-100);
+  outline-offset: 4px;
 }
 
 .rating-form__submit-button {
@@ -83,7 +88,7 @@
 }
 
 .stars-fieldset__required-message::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
