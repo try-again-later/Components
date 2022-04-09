@@ -8,6 +8,18 @@ const ratingFeedbackComponent = document.getElementById(
   'rating-feedback-component'
 );
 
+const ratingRequiredMessage = document.querySelector('.stars-fieldset__required-message');
+document.addEventListener('click', function (event: MouseEvent) {
+  if (event.target instanceof Node && ratingRequiredMessage?.contains(event.target) === false) {
+    ratingRequiredMessage.classList.remove('stars-fieldset__required-message_visible');
+  }
+});
+
+const ratingInput = ratingForm?.querySelector('[name=rating]');
+ratingInput?.addEventListener('invalid', function (event: Event) {
+  ratingRequiredMessage?.classList.add('stars-fieldset__required-message_visible');
+});
+
 ratingForm?.addEventListener('submit', function (event: SubmitEvent) {
   event.preventDefault();
 
