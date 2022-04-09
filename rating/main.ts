@@ -16,7 +16,7 @@ document.addEventListener('click', function (event: MouseEvent) {
 });
 
 const ratingInput = ratingForm?.querySelector('[name=rating]');
-ratingInput?.addEventListener('invalid', function (event: Event) {
+ratingInput?.addEventListener('invalid', function () {
   ratingRequiredMessage?.classList.add('stars-fieldset__required-message_visible');
 });
 
