@@ -1,5 +1,6 @@
-import './css/style.css';
+import '../css/reset.css';
 import '../css/util.css';
+import './css/style.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const ratingComponent = document.getElementById('rating-component');

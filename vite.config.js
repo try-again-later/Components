@@ -7,8 +7,9 @@ module.exports = defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        rating: resolve(__dirname, 'rating', 'index.html')
-      }
-    }
-  }
+        rating: resolve(__dirname, 'rating', 'index.html'),
+        videoPlayer: resolve(__dirname, 'video-player', 'index.html'),
+      },
+    },
+  },
 });

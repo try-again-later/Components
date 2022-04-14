@@ -3,14 +3,6 @@
 @import './header.css';
 @import './rating-feedback.css';
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   /* neutral color */
   --clr-neutral-100: hsl(0, 0%, 100%);
