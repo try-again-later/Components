@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled HTML5 video player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/Components/assets/util.27e2181c.js"></script>
+    <link rel="stylesheet" href="/Components/assets/util.b44781c7.css">
+    <link rel="stylesheet" href="/Components/assets/videoPlayer.d002047e.css">
+  </head>
+
+  <body>
+    <h1 class="visually-hidden">Styled HTML5 video player</h1>
+    <main class="center-contents">
+      <div class="video-player">
+        <video
+          class="video-player__video-element"
+          src="/Components/assets/cat-720p.7402a465.mp4"
+        ></video>
+
+        <div class="video-player__video-controls video-controls">
+          <div class="video-controls__progress-wrapper">
+            <div class="video-controls__progress-bar"></div>
+          </div>
+
+          <button
+            class="video-controls__toggle-play-button video-controls__button"
+            type="button"
+            title="Toggle play"
+            aria-label="Toggle video playback"
+          ></button>
+
+          <input
+            class="video-controls__volume-input video-controls__input-range"
+            type="range"
+            name="volume"
+            min="0"
+            max="1"
+            step="0.05"
+            value="0.4"
+          />
+
+          <input
+            class="video-controls__playback-speed-input video-controls__input-range"
+            type="range"
+            name="playbackSpeed"
+            min="0.25"
+            max="3"
+            step="0.05"
+            value="1"
+          />
+
+          <button
+            type="button"
+            class="video-controls__skip-backwards-button video-controls__button"
+            data-skip-amount="5"
+          >
+            5s
+          </button>
+
+          <button
+            type="button"
+            class="video-controls__skip-forwards-button video-controls__button"
+            data-skip-amount="-5"
+          >
+            5s
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/e860a5eff1.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
