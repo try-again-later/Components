@@ -1,0 +1,41 @@
+@import './rating.css';
+@import './rating-form.css';
+@import './header.css';
+@import './rating-feedback.css';
+
+:root {
+  /* neutral color */
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-300: hsl(217, 12%, 63%);
+  --clr-neutral-400: hsl(216, 12%, 54%);
+  --clr-neutral-600: hsl(213, 8%, 30%);
+  --clr-neutral-650: hsl(213, 19%, 23%);
+  --clr-neutral-700: hsl(213, 19%, 18%);
+  --clr-neutral-900: hsl(216, 12%, 8%);
+
+  /* primary color */
+  --clr-primary-400: hsl(25, 97%, 53%);
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: var(--clr-neutral-900);
+}
+
+.body__page-header {
+  place-self: stretch;
+}
+
+.body__page-main {
+  place-self: center;
+}
+
+.page-main {
+  padding: 1rem;
+}
